@@ -1,0 +1,66 @@
+#root{
+  background-color: rgb(36, 36, 107);
+}
+h3{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+.recipe-container{
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  margin: 10px;
+}
+.item-recipe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.recipe{
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  height: fit-content;
+}
+.form-input{
+  text-align: center;
+  margin-top: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+  
+}
+.title{
+  text-align: center;
+  color: white;
+}
+input{
+  height: 25px;
+  width: 200px;
+  border-radius: 8px;
+  margin-right: 10px;
+  outline: none;
+  border: 1px solid papayawhip;
+  padding: 5px;
+
+}
+
+.searchbtn{
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  padding: 3px;
+}
+.input-container{
+  margin-top: 50px;
+}
+.seemoreBtn{
+  background-color: #f83600;
+  border: none;
+}
+.seemoreBtn:hover{
+  background-color: green;
+  border: none;
+}
