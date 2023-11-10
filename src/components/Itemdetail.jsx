@@ -32,23 +32,27 @@ export default function Itemdetail({ rec }) {
         </ul>
       ))}
       <form className='comment-form' onSubmit={handleCommentSubmit}>
-        <input
-          type='text'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder='Enter Your Name...'
-        />
-        <br />
-        <textarea
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          placeholder='Type your comment about the ingredients here...'
-        ></textarea>
-        <br />
-        <button type='submit' className='commentBtn'>
-          Submit
-        </button>
-      </form>
+  <input
+    type='text'
+    id='nameInput'
+    name='name'
+    value={name}
+    onChange={(e) => setName(e.target.value)}
+    placeholder='Enter Your Name...'
+  />
+  <br />
+  <textarea
+    id='commentInput'
+    name='comment'
+    value={comment}
+    onChange={(e) => setComment(e.target.value)}
+    placeholder='Type your comment about the ingredients here...'
+  ></textarea>
+  <br />
+  <button type='submit' className='commentBtn'>
+    Submit
+  </button>
+</form>
 
       <h2>Comments:</h2>
       {/* Display existing comments if needed */}
