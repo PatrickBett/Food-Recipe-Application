@@ -6,13 +6,11 @@ import Input from './components/Input'
 function App() {
 
   return (
-    <>
-    
-      <h1 className='title'>FOOD RECIPE</h1>
+    <>    
+    <h1 className='title'>FOOD RECIPE</h1>
     
     <div className='recipe-container'>      
-      <Input />
-      
+      <Input />      
       </div>               
     </>
   )

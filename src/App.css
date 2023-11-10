@@ -23,6 +23,7 @@ h3{
   text-align: center;
   background-color: white;
   height: fit-content;
+  width: 30%;
 }
 .form-input{
   text-align: center;
@@ -36,14 +37,17 @@ h3{
   text-align: center;
   color: white;
 }
-input{
+.input{
   height: 25px;
-  width: 200px;
+  width: 70%;
   border-radius: 8px;
   margin-right: 10px;
   outline: none;
   border: 1px solid papayawhip;
   padding: 5px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
 
 }
 
@@ -62,5 +66,35 @@ input{
 }
 .seemoreBtn:hover{
   background-color: green;
+  border: none;
+}
+.ingredients-section{
+  background-color: aquamarine;
+}
+textarea{
+  outline: none;
+  border: 1px solid papayawhip;
+  width: 80%;
+  height: 60px;
+
+}
+li{
+  text-align: left;
+  list-style-type: none;
+}
+input{
+  outline: none;
+  width: 80%;
+  height: 40px;
+  border: 1px solid papayawhip;
+}
+button{
+  outline: none;
+  border: 1px solid papayawhip;
+}
+.commentBtn:hover{
+  background-color: rgb(251, 195, 195);
+}
+.commentBtn{
   border: none;
 }
