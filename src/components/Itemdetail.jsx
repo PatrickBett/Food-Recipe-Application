@@ -21,11 +21,11 @@ export default function Itemdetail({ rec }) {
         </ul>
       ))}
       <form className='comment-form'>
-        <input type='text' value={name}  placeholder='Enter Your Name...' />
+        <input type='text'   placeholder='Enter Your Name...' />
         <br />
         <textarea
           placeholder='Type your comment about the ingredients here...'
-          value={comment}
+          
           
         ></textarea>
         <br />
