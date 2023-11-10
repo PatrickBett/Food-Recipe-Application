@@ -14,7 +14,7 @@ export default function Fetchdata({ input }) {
 
         const response = await fetch(url);
         const data = await response.json();
-
+        console.log(data)
         setRecipe(data.hits);
         setLoading(false);
       };
@@ -30,7 +30,7 @@ export default function Fetchdata({ input }) {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <Displayrecipe recipe={recipe.slice(0, 10)} /> // Limit the number of displayed recipes to 10
+        <Displayrecipe recipe={recipe.slice(0, 9)} /> // Limit the number of displayed recipes to 10
       )}
     </div>
   );

@@ -98,3 +98,12 @@ button{
 .commentBtn{
   border: none;
 }
+.updateBtn{
+  background-color: green;
+}
+.DeleteBtn{
+  background-color: red;
+}
+.list-comment{
+  padding: 5px;
+}
