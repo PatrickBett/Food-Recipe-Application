@@ -30,7 +30,10 @@ export default function Fetchdata({ input }) {
       {loading ? (
         <p>Loading...</p>
       ) : (
+
+        
         <Displayrecipe recipe={recipe.slice(0, 9)} /> // Limit the number of displayed recipes to 10
+        
       )}
     </div>
   );

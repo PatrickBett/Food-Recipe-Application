@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Itemdetail from './Itemdetail';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export default function Displayrecipe({ recipe }) {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
@@ -9,6 +9,10 @@ export default function Displayrecipe({ recipe }) {
     setSelectedRecipe(rec);
   };
 
+
+
+  
+
   return (
     <Router>
       <div>
@@ -16,20 +20,27 @@ export default function Displayrecipe({ recipe }) {
           {recipe.map((rec) => (
             <div key={rec.recipe.label} className='recipe'>
               <h2>{rec.recipe.label}</h2>
-              <img src={rec.recipe.image} className='image' />
+              <img src={rec.recipe.image} alt={rec.recipe.label} className='image' />
               <h5>Calories: {rec.recipe.calories}</h5>
 
               {/* Button to set the selected recipe */}
-              <button className='seemoreBtn' onClick={() => handleSeeMoreClick(rec)}>
-                See More
-              </button>
+              <Link to={`/itemdetails/${encodeURIComponent(rec.recipe.label)}`}>
+                <button className='seemoreBtn' onClick={() => handleSeeMoreClick(rec)}>
+                  See More
+                </button>
+              </Link>
             </div>
           ))}
         </div>
 
         {/* Conditionally render Itemdetail based on the selected recipe */}
         {selectedRecipe && (
-          <Itemdetail key={selectedRecipe.recipe.label} rec={selectedRecipe} />
+          <Routes>
+            <Route
+              path={`/itemdetails/${encodeURIComponent(selectedRecipe.recipe.label)}`}
+              element={<Itemdetail rec={selectedRecipe} />}
+            />
+          </Routes>
         )}
       </div>
     </Router>
