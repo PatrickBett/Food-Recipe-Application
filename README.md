@@ -51,6 +51,4 @@ The Itemdetail component shows detailed information about a selected recipe, inc
 
 ### Technologies Used
 
-React
-Axios
-Edamam API
+React, Axios, Edamam API
